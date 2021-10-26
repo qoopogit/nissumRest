@@ -18,11 +18,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.aigarcia.rest.daos.PhoneDAO;
 import net.aigarcia.rest.daos.UserDAO;
 import net.aigarcia.rest.daos.UserDaoCustom;
 import net.aigarcia.rest.dtos.Response;
-import net.aigarcia.rest.dtos.UserDTO;
 import net.aigarcia.rest.models.Phone;
 import net.aigarcia.rest.models.User;
 import net.aigarcia.rest.utils.Validator;
@@ -33,9 +31,6 @@ public class UserService {
 
 	@Autowired
 	private UserDAO userDao;
-
-	@Autowired
-	private PhoneDAO phoneDao;
 
 	@Autowired
 	private UserDaoCustom userDaoCustom;
